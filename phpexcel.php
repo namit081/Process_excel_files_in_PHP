@@ -12,7 +12,7 @@ function validateform()
 var x=document.forms["myform"]["tableName"].value;
 if (x==null || x=="")
   {
-  alert("Database name must be filled out");
+  alert("Table name must be filled out");
   return false;
   }
 var x = document.forms["myform"]["phone"].value
@@ -44,7 +44,7 @@ $noOfCols = $data->sheets[0]['numCols'];
 $noOfRows = $data->sheets[0]['numRows'];
 
 echo "<form action = \"addTable.php\" method = \"post\" name=\"myform\" onsubmit=\"return validateform()\">";
-echo "Database Name:<input type=\"text\" size=\"10\" maxlength=\"40\" name=\"tableName\"><br/>";
+echo "Table Name:<input type=\"text\" size=\"10\" maxlength=\"40\" name=\"tableName\"><br/>";
 
 echo "Select the column with phone numbers<br>"; //In case you want user to upload a file containing one column for mobile numbers
 
